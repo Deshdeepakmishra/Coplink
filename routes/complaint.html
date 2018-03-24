@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register Your Cpmplaint</title>
+  <link rel="stylesheet" type="text/css" href="complaintcss.css">
+</head>
+<body>
+  <h1>Write Your Complaint Here..</h1>
+  <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="pname">Guardian Name</label>
+    <input type="text" id="pname" name="guardianname" placeholder="Guardian name..">
+
+    <label for="phone"> Phone Number </label>
+    <input type="tel" id="phone" name="Phonenumber" minlength="10" maxlength="10" required>
+
+    <label for="uid">Aadhar Number</label>
+    <input type="Number" id="uid" name="Aadharnumber" minlength="12" maxlength="12" required><br>
+    <br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Australia">Australia</option>
+      <option value="Canada">Canada</option>
+      <option value="Usa">USA</option>
+      <option value="India">India</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="Hongkong">Hongkong</option>
+      <option value="South Africa">South Africa</option>
+      <option value="Zurich">Zurich</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write Your Complaint...." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  padding: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	margin:0 0 .5em 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#wrapper {
+	padding-left:312px;
+	position:relative;
+}
+
+#userList {
+	margin:0 0 30px 0;
+}
+	#userList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#userList table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#userList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#userList table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+
+#userInfo {
+	width:250px;
+	position:absolute;
+	top:0; left:0;
+}
+	#userInfo p {
+		padding:15px;
+		border:1px solid #CCC;
+		background:rgba(80,120,255,0.05);
+	}
+
+fieldset {
+	border:0;
+	padding:0; margin:0;
+}
+
+input[type=text], select, textarea {
+    width: 101%; /* Full width */
+    padding: 13px; /* Some padding */
+    border: 2px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 7px; /* Add a top margin */
+    margin-bottom: 17px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #5CAF51;
+    color: white;
+    padding: 13px 21px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #46a50;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 6px;
+    background-color: #f3f3f3;
+    padding: 21px;
+}
