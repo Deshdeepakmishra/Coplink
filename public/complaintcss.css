@@ -1,32 +1,131 @@
 input[type=text], select, textarea {
-    width: 101%; /* Full width */
-    padding: 13px; /* Some padding */
-    border: 2px solid #ccc; /* Gray border */
-    border-radius: 5px; /* Rounded borders */
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 7px; /* Add a top margin */
-    margin-bottom: 17px; /* Bottom margin */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #5CAF51;
-    color: white;
-    padding: 13px 21px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#heading
+{
+    font-size: 3em;
+    text-align: center;
+    color: #CD6155;
+
 }
 
+#side_bar{
+    display:inline-block;
+    position:absolute;
+    background-color:#BDC3C7; ;
+    color: white;
+    padding-top: 50px ;
+    padding-left:10px ;
+    padding-right:10px ;
+    border: none;
+    border-radius: 4px;
+    height: 100%;
+    left:1%;
+    width:20%;
+    margin-right: 2%;
+    text-align: center;
+   
+}
+a:link,a:visited{
+     color: black;
+     text-decoration:none;
+      background-color:#E5E7E9 ;
+      border-radius: 5px;
+     
+}
+a:hover{
+     color: #CD6155;
+     text-decoration:none;
+      background-color:#E5E7E9 ;
+      border-radius: 5px;
+     
+}
+label:hover
+{
+     color: #CD6155;
+     font-size: 1.5em;
+     cursor:pointer;
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #F50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.side
+{
+    font-size: 1.5em;
+    
+    padding-top:5%;
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom:5%;
+}
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #46a50;
+    background-color: #45a049;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-    border-radius: 6px;
-    background-color: #f3f3f3;
-    padding: 21px;
+    border-radius: 5px;
+    background-color:#BDC3C7;
+    padding: 20px;
+    left:25%;
+    margin-left: 1%;
+    margin-right: 2%;
+    display:inline-block;
+    position:absolute;
+}
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    
+    margin-right: 30px;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
